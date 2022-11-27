@@ -3,26 +3,40 @@
     padding: 0;
 }
 body {
-    background-color: rgb(220, 239, 255);
-    font-family: 'Roboto', sans-serif;
+    background-color: #F4F6F8;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 0 0 1px rgb(0 0 0 / 1%);
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
 #formulario {
-    margin: auto;
-    width: 30%;
-    height: fit-content;
-    background-color: white;
-    padding: 24px;
-    border: solid 1px #dddfe2;;
-    border-radius: 10px;
-    margin-top: 20px;
+    padding: 70px 70px 90px;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    width: 300px;
+    margin-top: 100px;
 }
 h1 {
     text-align: center;
     padding: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+h2 {
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+    color: #999999;
 }
 .logo {
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 30px;
 }
 form {
     display: flex;
@@ -33,7 +47,12 @@ form {
     font-size: small;
 }
 .campo {
-    padding: 15px;
+    padding: 10px 0px ;
+    width: 100%;
+}
+legend {
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 a {
     text-decoration: none;
@@ -42,50 +61,48 @@ a {
 .container {
     display: flex;
     align-items: center;
-    padding: 10px;
 }
 button {
     background-color: #0d6efd;
     color: white;
-    width: 100%;
+    width: 302px;
     height: 30px;
-    margin-right: 10px;
+    margin: auto;
     border: #0d6efd;
     border-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .agrupamento {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 30px;
 }
 input {
     font-size: 15px;
     line-height: 16px;
-    padding: 6px;
-    width: 60%;
+    width: 300px;
+    padding: 12px 0px;
+    text-indent: 10px;
     border: solid 1px #dddfe2;
 }
-
+input::placeholder {
+    color: #C2C2C2;
+}
 input:focus {
-    background-color: rgb(236, 236, 236);
-    border: solid 1px #ff0000;
+    outline-color: #0d6efd;
+    outline-style: solid;
+    outline-width: 2px;
 }
 #main-section {
     height: 700px;
 }
-@media only screen and (max-width: 1200px){
-    #formulario {
-        width: 80%;
-    }
-}
-@media only screen and (max-width: 600px){
-	#formulario {
-        width: 80%;
-    }
-}
-@media only screen and (max-width: 425px){
-	#formulario {
-        width: 80%;
-    }
+.senha {
+    margin-bottom: 20px;
 }

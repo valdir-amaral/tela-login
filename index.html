@@ -5,32 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Login | Pluralize</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
     <main id="main-section">
-        <div class="logo">
-            <img src="logopluralize.png" alt="Logo do Pluralize" class="logoimg" width="160">
-        </div>
+        
         <div id="formulario">
+            <div class="logo">
+                <img src="logopluralize.png" alt="Logo do Pluralize" class="logoimg" width="160">
+            </div>
             <form action="GET">
                 <h1>Faça login</h1>
-                <hr>
+                <h2>Digite seu e-mail e senha</h2>
                 <div class="agrupamento">
                     <div class="campo">
                         <legend>E-mail</legend>
-                        <input type="email" name="" id="">
+                        <input type="email" placeholder="seuemail@pluralize.com" required name="" id="">
                     </div>
-                    <div class="campo">
+                    <div class="campo senha">
                         <legend>Senha</legend>
-                        <input type="password" name="" id="">
+                        <input type="password" placeholder="Digite sua senha" required name="" id="">
                     </div>
                     <div class="container">
-                        <button type="submit">Fazer login</button><span class="legendinha">Não possui conta? <span class="destaque"><a href="cadastro.html">Crie uma</a></span></span>
+                        <button type="submit">Entrar</button>
                     </div>
                 </div>
             </form>
